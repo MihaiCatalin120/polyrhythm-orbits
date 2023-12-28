@@ -26,7 +26,6 @@ function initParams() {
   prevNoteY = new Array(noCircles).fill(canvas.height / 2);
 
   tunesArray = new Array(noCircles).fill('').map((_, index) => { return new Audio(`${import.meta.env.BASE_URL}/tune${index}.wav`) });
-  // tunesArray = new Array(noCircles).fill('').map((_, index) => { return new Audio(`tune${index}.wav`) });
   highlights = new Array(noCircles).fill(0);
   baseSpeed = 0.1;
   noLoops = 50;
@@ -111,14 +110,12 @@ const initAnimation = () => {
 
   //play ambient background music
   const backgroundTune = new Audio(`${import.meta.env.BASE_URL}/background.wav`);
-  // const backgroundTune = new Audio(`background.wav`);
   backgroundTune.volume = 0.1;
   backgroundTune.loop = true;
   backgroundTune.play()
     .catch((error) => console.error(error));
   setTimeout(() => {
     const backgroundTune2 = new Audio(`${import.meta.env.BASE_URL}/background.wav`);
-    // const backgroundTune2 = new Audio(`background.wav`);
     backgroundTune2.volume = 0.1;
     backgroundTune2.loop = true;
     backgroundTune2.play()
