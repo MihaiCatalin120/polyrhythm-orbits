@@ -1,0 +1,14 @@
+{
+  "name": "polyrythm",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --base=/polyrhythm",
+    "build": "vite build --base=/polyrhythm",
+    "preview": "vite preview --base=/polyrhythm"
+  },
+  "devDependencies": {
+    "vite": "^5.0.8"
+  }
+}

@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/purpleDot.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Polyrhythm</title>
+  </head>
+  <body>
+    <canvas id="canvas"></canvas>
+    <script type="module" src="/main.js"></script>
+
+    <dialog open>
+      <p>Warning, ambient sounds will play continuously</p>
+      <form method="dialog">
+          <button id="start">Play</button>
+          <button onclick="window.history.back()">Cancel</button>
+      </form>
+    </dialog>
+
+    <button id="info" onclick="document.getElementById('infoDialog').showModal()">i</button>
+
+    <dialog id="infoDialog">
+      <p>Sounds made with <a href="https://www.beepbox.co/" target="_blank">BeepBox</a></p>
+      <p>Inspired by <a href="https://youtu.be/Kt3DavtVGVE?si=XUCvBwrpwKXgKsQl" target="_blank">Hyperplexed</a></p>
+      <p>What is a <a href="https://en.wikipedia.org/wiki/Polyrhythm" target="_blank">Polyrhythm?</a></p>
+      <p>Hope you enjoy 😀</p>
+
+      <form method="dialog">
+        <button style="margin-top: 10px;">Close</button>
+        <a style="margin-left: 20px;" href="mailto:mihaicatalin449@gmail.com">Contact me</a>
+      </form>
+    </dialog>
+  </body>
+</html>
