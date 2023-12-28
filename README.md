@@ -1,7 +1,7 @@
 
 # Polyrhythm (Orbits)
 
-[link](vmoid.com/polyrhythm)
+[link](https://vmoid.com/polyrhythm)
 
 Basic example of polyrhythm visualisation. Made with only pure javascript, the only dependency being vite for bundling.
 
